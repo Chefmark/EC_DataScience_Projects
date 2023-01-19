@@ -26,4 +26,32 @@ max:int = 10
 min:int = 1
 random_num = random.randint(min, max)
 
-guess = input("What is your guess")
+score = 0
+
+while True:
+    print("Your number is: ", random_num)
+    
+    guess = input("What is your guess? type h for higher, l for lower, or exit to quit: ")
+    if guess != "h" and guess != "l" and guess != "exit":
+        continue
+    if guess == "exit": 
+        print("Thanks for playing")
+        break
+
+    new_num = random.randint(min, max)
+
+    if new_num >= random_num and guess == "h":
+        score += 1
+        print("Correct, your score is: ", score)
+    elif new_num <= random_num and guess == "l":
+        score += 1
+        print("Correct, your score is: ", score)
+    else:
+        print("Oh no you lost the game. your score is: ", score)
+        score = 0
+        print("Try again")
+    
+    random_num = new_num
+
+
+
