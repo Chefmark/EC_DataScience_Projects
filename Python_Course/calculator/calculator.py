@@ -1,4 +1,4 @@
-#EXERCISE 2
+#EXERCISE 2 
 
 from typing import Tuple
 
