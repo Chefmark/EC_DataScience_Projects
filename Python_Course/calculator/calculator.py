@@ -1,5 +1,4 @@
-#EXERCISE 2 
-#PART 1: calculator step 1
+#EXERCISE 2
 
 from typing import Tuple
 
