@@ -1,5 +1,5 @@
 # Exercise 3
-from typing import Tuple
+from typing import list, Tuple
 # Steg att göra
 # 1. skriv ut spelplanen med print_board() lista med listor
 # 2. ta input från användaren (2 spelare, update board och print board mellan varje drag)

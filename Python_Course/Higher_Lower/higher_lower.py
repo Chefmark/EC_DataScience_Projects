@@ -1,4 +1,4 @@
-import random
+
 
 # Planen är att ni ska bygga ett litet snabbt gissningsspel med lite assistans. Det kommer att gå riktigt fint.
 
@@ -21,6 +21,7 @@ import random
 # guess = input("Vad är din gissning?: ")
 
 # Med dess funktioner och tips så går det att implementera detta enkla spel. Det tar lite tankekraft första gången men när man lär sig programmeringstänket så går det rätt snabbt.
+import random
 
 max:int = 10
 min:int = 1
