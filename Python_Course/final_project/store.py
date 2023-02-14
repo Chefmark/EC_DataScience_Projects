@@ -1,17 +1,14 @@
 from typing import List
 import requests
 
+
 #Local function imports
-from print_menu_functions import *
-from order_functions import *
-from member_functions import *
-from employee_functions import *
-from inventory_functions import *
-from statistics_functions import *
+from function_print_menu import *
+from function_employees import employee_menu
 
 #Local imports
-import models
-
+from model_employee import Employee
+from model_member import Member
 
 # Log_in  tar str argument och matchar det med employee ID
 # Om input är exit ska programmet stängas av.
@@ -58,7 +55,7 @@ def main():
                         # Om inget finns ska man kunna spara en ny medlem eller 
                         # bara lägga till guest/non-member.
                         case 1:
-                            add_new_order()
+                            
                             pass
                         case 2: # tar användaren tillbaka till huvudmenyn
                             print("returning to main menu")
@@ -112,14 +109,20 @@ def main():
                 
                     match int(ch_employees):
                         case 1: #Add a new Employee
+                            employee_menu.create_employee()
+                        case 2: #Print Employees
+                            employees = employee_menu.get_all_employees()
+                            employee_menu.print_all_employees(employees)
+                        case 3: #Search Employees
+                            employees = employee_menu.get_all_employees()
+                            employee_menu.search_employee(employees)
+                        case 4: #Update Employee
+                            employees = employee_menu.get_all_employees()
+                            employee_menu.update_employee(employees)
+                        case 5: #Delete Employee Only C3
+                            employee_menu.delete_employee()
                             pass
-                        case 2: #Search Employee
-                            pass
-                        case 3: #Update Employee
-                            pass
-                        case 4: #Delete Employee Only C3
-                            pass
-                        case 5: # tar användaren tillbaka till huvudmenyn
+                        case 6: # tar användaren tillbaka till huvudmenyn
                             print("returning to main menu")
                             employee_choice = False
                         case _:
@@ -143,9 +146,9 @@ def main():
                         # 
                         case 1: # Add Product
                             pass
-                        case 2: # Update Product
+                        case 2: # Print Inventory (Item name, Item ID, amount, price)
                             pass
-                        case 3: # Print Inventory (Item name, Item ID, amount, price) 
+                        case 3: # Update Product 
                             pass
                         case 4: # Remove product (enbart C3)
                             pass
@@ -189,7 +192,7 @@ def main():
                 print("")
                 print("Error, wrong input. Try again")
                 print("")
-
+    pass
 
 while __name__ == "__main__":
     main()
