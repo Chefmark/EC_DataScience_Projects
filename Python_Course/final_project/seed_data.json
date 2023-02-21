@@ -1,0 +1,312 @@
+{
+    "employees":[
+        {
+            "employee_code": "ME1",
+            "first_name": "Markus",
+            "last_name": "Ekman",
+            "emp_type": "owner",
+            "is_owner": "YES",
+            "is_shiftleader":"NO",
+            "start_date":"2023-02-10",
+            "active": "YES"
+        },
+        {
+            "employee_code": "KB1",
+            "first_name": "Kathrine",
+            "last_name": "Blue",
+            "emp_type": "shiftleader",
+            "is_owner": "NO",
+            "is_shiftleader":"YES",
+            "start_date":"2023-02-11",
+            "active": "YES"
+        },
+        {
+            "employee_code": "DE1",
+            "first_name": "David",
+            "last_name": "Erland",
+            "emp_type": "employee",
+            "is_owner": "NO",
+            "is_shiftleader":"NO",
+            "start_date":"2023-02-13",
+            "active": "YES"
+        }
+    ],
+    "members":
+        [
+            {
+                "first_name": "Michael",
+                "last_name": "Jonsson",
+                "phone_number": "0700832192",
+                "email": "m.jonsson@gmail.com"
+            },
+            {
+                "first_name": "Sofia",
+                "last_name": "Steel",
+                "phone_number": "0719327523",
+                "email": "s.steel@gmail.com"
+            },
+            {
+                "first_name": "Ida",
+                "last_name": "Andersson",
+                "phone_number": "0706329938",
+                "email": "i.andersson@gmail.com"
+            },
+            {
+                "first_name": "Jesper",
+                "last_name": "Pil",
+                "phone_number": "0701328329",
+                "email": "j.pil@gmail.com"
+            },
+            {
+                "first_name": "Daniel",
+                "last_name": "Svensson",
+                "phone_number": "0711239798",
+                "email": "d.svensson@gmail.com"
+            },
+            {
+                "first_name": "Johanna",
+                "last_name": "Pil",
+                "phone_number": "0700420708",
+                "email": "jo.pil@gmail.com"
+            },
+            {
+                "first_name": "Guest",
+                "last_name": "Guest",
+                "phone_number": " ",
+                "email": " "
+            }
+        ],
+    "products":
+        [
+            {
+                "name": "Water",
+                "description": "A bottle of water",
+                "stock": 100,
+                "price": 2.00,
+                "tax": 0.24
+            },
+            {
+                "name": "Cola",
+                "description": "A can of Cola",
+                "stock": 80,
+                "price": 3.00,
+                "tax": 0.36
+            },
+            {
+                "name": "BLT",
+                "description": "Bacon-Lettuce-Tomatoe sandwhich",
+                "stock": 30,
+                "price": 17.50,
+                "tax":2.10
+            },
+            {
+                "name": "B & E",
+                "description": "Bacon and egg sandwhich",
+                "stock": 40,
+                "price": 16.00,
+                "tax":1.92
+            },
+            {
+                "name": "Chocolate Chip Cookie",
+                "description": "Chocolate Chip cookie",
+                "stock": 50,
+                "price": 4.00,
+                "tax": 0.48
+            },
+            {
+                "name": "Grilled Halloumi",
+                "description": "Grilled Halloumi sandwhich",
+                "stock": 15,
+                "price": 14.00,
+                "tax":1.68
+            },
+            {
+                "name": "Grilled Steak",
+                "description": "Grilled Steak sandwhich",
+                "stock": 20,
+                "price": 18,
+                "tax":2.16
+            },
+            {
+                "name": "Chips",
+                "description": "A bag of salted chips",
+                "stock": 100,
+                "price": 3.00,
+                "tax": 0.36
+            },
+            {
+                "name": "Tuna Melt",
+                "description": "Tuna Melt sandwhich",
+                "stock": 30,
+                "price": 16.00,
+                "tax": 1.92
+            },
+            {
+                "name": "Cheese Melt",
+                "description": "Cheese Melt sandwhich",
+                "stock": 40,
+                "price": 14.00,
+                "tax": 1.68
+            }
+        ],
+    "orders":
+        [
+            {
+                "employee_code": "ME1",
+                "member_id": 1,
+                "total_price": 200,
+                "tax_total": 24
+            },
+            {
+                "employee_code": "ME1",
+                "member_id": 4,
+                "total_price": 43.5,
+                "tax_total": 5.22
+            },
+            {
+                "employee_code": "KB1",
+                "member_id": null,
+                "total_price": 220,
+                "tax_total": 26.4
+            },
+            {
+                "employee_code": "DE1",
+                "member_id": 5,
+                "total_price": 175,
+                "tax_total": 21
+            }
+        ],
+    "order_details":
+        [
+            {
+                "product_id": 1,
+                "product_name": "Water",
+                "product_price": 2,
+                "product_tax": 0.24,
+                "amount": 10,
+                "order_id": 1,
+                "subtax": 2.4,
+                "subtotal": 20 
+            },
+            {
+                "product_id": 7,
+                "product_name": "Grilled Steak",
+                "product_price": 18,
+                "product_tax": 2.16,
+                "amount": 10,
+                "order_id": 1,
+                "subtax": 21.6,
+                "subtotal": 180 
+            },
+            {
+                "product_id": 2,
+                "product_name": "Cola",
+                "product_price": 3,
+                "product_tax": 0.36,
+                "amount": 2,
+                "order_id": 2,
+                "subtax": 0.72,
+                "subtotal": 6 
+            },
+            {
+                "product_id": 3,
+                "product_name": "BLT",
+                "product_price": 17.5,
+                "product_tax": 2.1,
+                "amount": 1,
+                "order_id": 2,
+                "subtax": 2.1,
+                "subtotal": 17.5 
+            },
+            {
+                "product_id": 10,
+                "product_name": "Cheese Melt",
+                "product_price": 14,
+                "product_tax": 1.68,
+                "amount": 1,
+                "order_id": 2,
+                "subtax": 1.68,
+                "subtotal": 14 
+            },
+            {
+                "product_id": 8,
+                "product_name": "Chips",
+                "product_price": 3,
+                "product_tax": 0.36,
+                "amount": 2,
+                "order_id": 2,
+                "subtax": 0.72,
+                "subtotal": 6
+            },
+            {
+                "product_id": 1,
+                "product_name": "Water",
+                "product_price": 2,
+                "product_tax": 0.24,
+                "amount": 10,
+                "order_id": 3,
+                "subtax": 2.4,
+                "subtotal": 20 
+            },            
+            {
+                "product_id": 5,
+                "product_name": "Chocolate Chip Cookie",
+                "product_price": 4,
+                "product_tax": 0.48,
+                "amount": 10,
+                "order_id": 3,
+                "subtax": 4.8,
+                "subtotal": 40 
+            },
+            {
+                "product_id": 9,
+                "product_name": "Water",
+                "product_price": 16,
+                "product_tax": 1.92,
+                "amount": 10,
+                "order_id": 3,
+                "subtax": 19.2,
+                "subtotal": 160 
+            },
+            {
+                "product_id": 6,
+                "product_name": "Grilled Halloumi",
+                "product_price": 14,
+                "product_tax": 1.68,
+                "amount": 5,
+                "order_id": 4,
+                "subtax": 8.4,
+                "subtotal": 70 
+            },
+            {
+                "product_id": 4,
+                "product_name": "B & E",
+                "product_price": 16,
+                "product_tax": 1.92,
+                "amount": 5,
+                "order_id": 4,
+                "subtax": 9.6,
+                "subtotal": 80 
+            },
+            {
+                "product_id": 1,
+                "product_name": "Water",
+                "product_price": 2,
+                "product_tax": 0.24,
+                "amount": 5,
+                "order_id": 4,
+                "subtax": 1.2,
+                "subtotal": 10 
+            },
+            {
+                "product_id": 2,
+                "product_name": "Cola",
+                "product_price": 3,
+                "product_tax": 0.36,
+                "amount": 5,
+                "order_id": 4,
+                "subtax": 1.80,
+                "subtotal": 15 
+            }
+        ]
+}
