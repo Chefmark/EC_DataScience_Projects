@@ -1,0 +1,10 @@
+{
+    "employee_code": "AA01",
+    "first_name": "Admin",
+    "last_name": "Admin",
+    "emp_type": "owner",
+    "is_owner": "YES",
+    "is_shiftleader": "NO",
+    "start_date": "0000-00-00",
+    "active": "YES"
+}
