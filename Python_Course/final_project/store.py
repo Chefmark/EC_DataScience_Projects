@@ -205,6 +205,11 @@ def main():
                             Statistics.member_count()
                             Statistics.guest_count()
                         case 2: # Return to main menu
+                        case 1: #Prints some statistics
+                            Statistics.total_sales()
+                            Statistics.member_count()
+                            Statistics.guest_count()
+                        case 2: # Return to main menu
                             print("returning to main menu")
                             statistics_choice = False
                         case _:
@@ -213,9 +218,11 @@ def main():
                             print("")  
 
             case 6: #Log out the user
+            case 6: #Log out the user
                 print("You have been logged out")
                 logged_in = False 
 
+            case _:
             case _:
                 print("")
                 print("Error, wrong input. Try again")
@@ -225,5 +232,9 @@ while __name__ == "__main__":
     db = DB("store_api.db")
     d_url = "db_url"
     db.__init__(d_url)
+    db = DB("store_api.db")
+    d_url = "db_url"
+    db.__init__(d_url)
     main()
+    
     
